@@ -1,0 +1,206 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Main Container */
+.Main-container {
+    min-height: 100vh;
+    background: url(CAFE.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+nav ul li a:hover {
+    border: 2px solid white;
+    padding: 5px;
+}
+
+nav button {
+    padding: 10px 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px; /* Adjust margin so content does not overlap with navbar */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 16px;
+    font-family: cursive;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.container button {
+    padding: 12px 45px;
+    margin-top: 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+    padding: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        margin-top: 150px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container button {
+        padding: 10px 30px;
+    }
+
+    .social-media a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-top: 180px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .container button {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+}
